@@ -2,4 +2,7 @@
 
 ## Table of Contents
 
-- [Experiment Description]
+- Experiment Description
+- Metric choice
+- Sizing
+- Analysis
