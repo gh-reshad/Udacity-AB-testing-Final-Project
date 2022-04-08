@@ -22,7 +22,7 @@ The alternative hypothesis is that this approach might be effective in reducing 
 ---
 # Metric Choice
 
-..* Invariant metrics
+* Invariant metrics
 
 Invariant metrics are the ones that used for sanity checks and will remain invariat throughout the experiment
 
@@ -32,7 +32,7 @@ _Number of clicks_: That is, the number of unique cookies to click the "Start fr
 
 _Click through probability_: That is, number of unique cookies to click the "Start free trial" button divided by number of unique cookies to view the course overview page
 
-..* Evaluation metrics
+* Evaluation metrics
 
 Evaluation metrics are those the one we care about. The metrics that we use to run the experiment and make a decision based on.
 
@@ -42,10 +42,38 @@ _Retention_: That is, number of user-ids to remain enrolled past the 14-day boun
 
 _Net conversion_: hat is, number of user-ids to remain enrolled past the 14-day boundary (and thus make at least one payment) divided by the number of unique cookies to click the "Start free trial" button
 
+---
 # Sizing
 
-..* Calculating the standard deviation
+* Calculating the standard deviation
 
 Udacity has provided the baseline values for each metric. [This spreadsheet](https://docs.google.com/spreadsheets/d/1MYNUtC47Pg8hdoCjOXaHqF-thheGpUshrFA21BAJnNc/edit#gid=0)
 
 For each evaluation metric, calculating the standard deviation given a sample size of 5000 cookies visiting the course overview page.
+
+<table>
+<thead>
+<tr class="header">
+<th align="center">Evaluation Metric</th>
+<th align="center">Standard Deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Gross Conversion</td>
+<td align="center">0.0202</td>
+</tr>
+<tr class="even">
+<td align="center">Retention</td>
+<td align="center">.0549</td>
+</tr>
+<tr class="odd">
+<td align="center">Net Conversion</td>
+<td align="center">.0156</td>
+</tr>
+</tbody>
+</table>
+
+* Determining the sample size for each evaluation metrics
+using the [sample size calculator](https://www.evanmiller.org/ab-testing/sample-size.html) here:
+
